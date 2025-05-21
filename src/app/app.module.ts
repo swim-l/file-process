@@ -23,6 +23,7 @@ registerLocaleData(en);
 @NgModule({
   declarations: [
     AppComponent,
+    TextCompareComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +33,6 @@ registerLocaleData(en);
     NzMenuModule,
     NzIconModule,
     ExcelSplitComponent,
-    TextCompareComponent,
     NgOptimizedImage,
     PageHeaderComponent
   ],

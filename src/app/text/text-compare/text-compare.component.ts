@@ -4,8 +4,7 @@ import { PageHeaderComponent } from '../../../component/page-header/page-header.
 
 @Component({
   selector: 'app-text-compare',
-  standalone: true,
-  imports: [PageHeaderComponent],
+  standalone: false,
   templateUrl: './text-compare.component.html',
   styleUrl: './text-compare.component.less'
 })
@@ -17,12 +16,12 @@ export class TextCompareComponent {
   spaceProcessed1: string = ``;
   spaceProcessed2: string = ``;
   differences: any[] = [];
-  
+
   safeContent1: SafeHtml = '';
   safeContent2: SafeHtml = '';
   safeSpaceContent1: SafeHtml = '';
   safeSpaceContent2: SafeHtml = '';
-  
+
   private sanitizer: DomSanitizer;
 
   constructor(private elementRef: ElementRef, sanitizer: DomSanitizer) {
