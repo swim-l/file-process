@@ -1,11 +1,14 @@
 import { Component, ElementRef } from "@angular/core";
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { PageHeaderComponent } from '../../../component/page-header/page-header.component';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-text-compare',
-  standalone: false,
   templateUrl: './text-compare.component.html',
+  imports: [PageHeaderComponent, NzButtonModule, CommonModule, FormsModule],
   styleUrl: './text-compare.component.less'
 })
 export class TextCompareComponent {
