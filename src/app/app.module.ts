@@ -15,12 +15,13 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NgOptimizedImage } from '@angular/common';
 import { PageHeaderComponent } from '../component/page-header/page-header.component';
+import { SplitComponent } from './component/split/split.component';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,

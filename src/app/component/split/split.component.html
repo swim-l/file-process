@@ -1,0 +1,21 @@
+<div class="tool-card">
+    <div class="split-options">
+        <div class="option-item">
+            <span class="option-label">每个文件行数：</span>
+            <nz-input-number [(ngModel)]="rowsPerFile" [nzMin]="1" [nzMax]="10000"
+                class="option-input"></nz-input-number>
+        </div>
+    </div>
+    <div class="upload-area">
+        <nz-upload nzType="drag" [nzMultiple]="true" [nzCustomRequest]="customRequest"
+            (nzChange)="handleChange($event)">
+            <p class="ant-upload-drag-icon">
+                <nz-icon nzType="inbox" />
+            </p>
+            <p class="ant-upload-text">点击或拖拽文件到此区域上传</p>
+            <p class="ant-upload-hint">
+                {{ desc }}
+            </p>
+        </nz-upload>
+    </div>
+</div>
